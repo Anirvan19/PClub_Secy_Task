@@ -35,7 +35,57 @@ Now using the inbuilt --dbs command we get the databases present in the server.<
 
 ![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/50aee17d-6f55-4ca4-867f-7b6cfee64e8b)
 
-pclub_secy_task looks relevant to us now we will use the --tables command in this database.
+pclub_secy_task looks relevant to us now we will use the --tables command in this database.</br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/58a0942e-2dc0-41ff-b2fe-f8f961317bd2)
+
+Now the blogs table had the same content we predicted. We now use the --dump command to retrieve information out of the table.</br>
+From the Hints Table we get, </br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/a2950324-5c59-4ba0-b6cb-4697b3b72531)
+
+and then the USERS Table, </br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/5566c419-ac46-4352-ab61-6d4873745c5c)
+
+Now we know the user kaptaan and we use an online md5 decrypter, MD5 hash is not reversible but such online tools check their database and match it with similar hashes</br>
+I am using https://md5decrypt.net/ for this. </br>
+Then entering this information in the secy login page we get our flag. :D
+
+## FLAG 4
+<b>pclub{data_1s_3v3ryth1ng}</b></br>
+Hints table said that 3 users have files now my social engineering knowledge predicted that the users could be amansg22 and ritvikg22 and from amansg22 we get an image ariitk.jpeg!!</br>
+Now we have a stegano task at hand!!</br>
+1.) Exiftool - nothing informative</br>
+2.) Strings - nothing informative</br>
+3.) Steghide - DAMN YESSS, we got something</br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/b23758de-79e2-4cf7-bb26-2db3e89d1ba6)
+
+There is an embedded image here called qr_code.png, Scanning this QR we get</br>
+<b>Y3B5aG97cW5nbl8xZl8zaTNlbGd1MWF0fQ==</b></br>
+which looks like a b64 encrypted message, decrypting it back we get</br>
+cpyho{qngn_1f_3i3elgu1at}, which looks like shift ciphered message and using rot13 we get our flag</br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/61a06380-65ee-4dc0-bdd9-c95fac297656)
+
+## FLAG-5
+<b></b></br>
+From ritvikg22's user login page we get a pastebin file</br>
+
+![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/4f710ce4-2a13-40b2-a312-5a5b5a73c513)
+
+which when connected to nc asks for username and password prompt which we need to exploit in order to get a flag.</br>
+Decompiling the binary file using Ghidra
+
+
+
+
+
+
+
+
+
 
 
 
