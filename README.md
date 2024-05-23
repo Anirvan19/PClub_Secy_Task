@@ -70,14 +70,13 @@ cpyho{qngn_1f_3i3elgu1at}, which looks like shift ciphered message and using rot
 ![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/61a06380-65ee-4dc0-bdd9-c95fac297656)
 
 ## FLAG-5
-<b>pclub{3nv_var1abl3s_fr0m_c0mmand_1nj3ct10n}</b></br>
+<b></b></br>
 From ritvikg22's user login page we get a pastebin file</br>
 
 ![image](https://github.com/Anirvan19/PClub_Secy_Task/assets/152109169/4f710ce4-2a13-40b2-a312-5a5b5a73c513)
 
 which when connected to nc asks for username and password prompt which we need to exploit in order to get a flag.</br>
-Decompiling the binary file using Ghidra. Found nothing there but see there is a script that is checking and validating from the server after checking all the scripts also that updates who solved 
-bashrc.save file I got the flag
+Decompiling the binary file using Ghidra. Found nothing there but see there is a script that is checking and validating from the server after checking all the scripts also that updates who solved did not find anything.
 
 
 
